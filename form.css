@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding: 2em;
+}
+
+fieldset {
+    margin: 1em auto;
+    padding: 1em 2em;
+    border: darkblue solid 1px;
+    border-radius: 6px;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: darkslateblue;
+}
+
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: .4em;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 180px;
+}
+
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+td:first-child label {
+    margin-top: 0;
+}
+
+
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 15em;
+    box-sizing: border-box;
+}
+
+/* Radio dan checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: .3em;
+}
+
+/* Supaya pilihan radio dan checkbox tidak terlalu renggang */
+td:nth-child(2) label {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+/* Select */
+select {
+    padding: .5em;
+    border: solid 1px #999;
+    width: 15em;
+}
+
+/* Textarea */
+textarea {
+    min-height: 8em;
+    width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+    box-sizing: border-box;
+}
+
+/* Button */
+button {
+    padding: .5em 1em;
+    border-radius: 6px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+form > button {
+    display: inline-block;
+}
+
+form {
+    text-align: center;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+/* Large screen rules */
+@media screen and (min-width: 430px) {
+
+    legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: 1em auto;
+    }
+}
